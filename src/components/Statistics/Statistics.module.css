@@ -3,8 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f0f0f0;
-  border-radius: 4px;
+  background-color: #fff;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   margin: 20px;
@@ -12,6 +11,10 @@
 
 .title {
   font-size: 25px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  font-weight: 600;
+  color: #555;
 }
 
 .statList {
@@ -19,7 +22,9 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding-left: 0;
+  margin-top: 25px;
+  margin-bottom: 0;
 }
 
 .item {
@@ -27,23 +32,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 140px;
+  width: 100px;
   height: min-content;
-  margin: 5px;
-  border-radius: 4px;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12);
-  list-style: none;
+  color: #fff;
 }
 
 .label {
   display: block;
-  margin: 5px;
+  margin: 12px 0 0 0;
 }
 
 .percentage {
   display: block;
-  margin: 5px;
+  margin: 12px;
   font-size: 20px;
-  font-weight: 700;
 }

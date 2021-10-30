@@ -4,9 +4,11 @@ import Section from './components/Section';
 import ProfileList from './components/ProfileList';
 import Statistics from './components/Statistics';
 import FriendList from './components/FriendList';
+import TransactionHistory from './components/TransactionHistory';
 import users from './db/users.json';
 import statisticalData from './db/statistical-data.json';
 import friends from './db/friends.json';
+import transactions from './db/transactions.json';
 
 export default function App() {
   return (
@@ -23,7 +25,9 @@ export default function App() {
         <FriendList friends={friends} />
       </Section>
 
-      <Section title="История транзакций"></Section>
+      <Section title="История транзакций">
+        <TransactionHistory items={transactions} />
+      </Section>
     </Container>
   );
 }
