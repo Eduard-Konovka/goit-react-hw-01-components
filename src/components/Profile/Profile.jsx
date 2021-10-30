@@ -1,14 +1,12 @@
 import PropTypes from 'prop-types';
 import s from './Profile.module.css';
 
-const defaultImage = 'https://dummyimage.com/512x512/2a2a2a/ffffff&text=Аватар+пользователя'
-
 export default function Profile({ name, tag, location, avatar, stats }) {
   return (
     <div className={s.profile}>
       <div className={s.description}>
         <img
-          src={avatar ?? defaultImage}
+          src={avatar ?? `https://dummyimage.com/512x512/2a2a2a/ffffff&text=Аватар+пользователя+${name}`}
           alt={`Аватар пользователя ${name}`}
           className={s.avatar}
         />
@@ -36,11 +34,6 @@ export default function Profile({ name, tag, location, avatar, stats }) {
     </div>
   );
 }
-
-Profile.defaultProps = {
-  avatar:
-    'https://dummyimage.com/512x512/2a2a2a/ffffff&text=Аватар+пользователя',
-};
 
 Profile.propTypes = {
   name: PropTypes.string.isRequired,

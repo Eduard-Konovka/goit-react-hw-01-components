@@ -1,0 +1,26 @@
+.avatar {
+  display: block;
+  margin: 5px;
+}
+
+.name {
+  display: inline-block;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.status {
+  display: block;
+  width: 55px;
+  margin: 5px;
+  font-size: 30px;
+}
+
+.onLine {
+  color: green;
+}
+
+.ofLine {
+  color: red;
+}

@@ -3,13 +3,15 @@ import Container from './components/Container';
 import Section from './components/Section';
 import ProfileList from './components/ProfileList';
 import Statistics from './components/Statistics';
+import FriendList from './components/FriendList';
 import users from './db/users.json';
 import statisticalData from './db/statistical-data.json';
+import friends from './db/friends.json';
 
 export default function App() {
   return (
     <Container>
-      <Section title="Профиль социальной сети">
+      <Section title="Профили социальной сети">
         <ProfileList items={users} />
       </Section>
 
@@ -17,7 +19,9 @@ export default function App() {
         <Statistics title="Upload stats" options={statisticalData} />
       </Section>
 
-      <Section title="Секция друзей"></Section>
+      <Section title="Секция друзей">
+        <FriendList friends={friends} />
+      </Section>
 
       <Section title="История транзакций"></Section>
     </Container>
