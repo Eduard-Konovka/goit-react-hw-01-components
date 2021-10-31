@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import Profile from '../Profile';
+import Profile from './Profile';
 import s from './ProfileList.module.css'
 
 export default function ProfileList({ items = [] }) {
